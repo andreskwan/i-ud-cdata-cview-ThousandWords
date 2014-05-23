@@ -22,6 +22,9 @@
 		EA532749192F9B890009541A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA53272D192F9B890009541A /* CoreData.framework */; };
 		EA532751192F9B890009541A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA53274F192F9B890009541A /* InfoPlist.strings */; };
 		EA532753192F9B890009541A /* Thousand_WordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA532752192F9B890009541A /* Thousand_WordsTests.m */; };
+		EA53275E192FA56A0009541A /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = EA53275D192FA56A0009541A /* Album.m */; };
+		EA532761192FA63C0009541A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA532760192FA63C0009541A /* Storyboard.storyboard */; };
+		EA532764192FA8010009541A /* KCAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA532763192FA8010009541A /* KCAlbumTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		EA53274E192F9B890009541A /* Thousand WordsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thousand WordsTests-Info.plist"; sourceTree = "<group>"; };
 		EA532750192F9B890009541A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA532752192F9B890009541A /* Thousand_WordsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Thousand_WordsTests.m; sourceTree = "<group>"; };
+		EA53275C192FA56A0009541A /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Album.h; path = model/Album.h; sourceTree = "<group>"; };
+		EA53275D192FA56A0009541A /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Album.m; path = model/Album.m; sourceTree = "<group>"; };
+		EA532760192FA63C0009541A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = UI/Storyboard.storyboard; sourceTree = "<group>"; };
+		EA532762192FA8010009541A /* KCAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAlbumTableViewController.h; sourceTree = "<group>"; };
+		EA532763192FA8010009541A /* KCAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAlbumTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +123,10 @@
 		EA53272F192F9B890009541A /* Thousand Words */ = {
 			isa = PBXGroup;
 			children = (
+				EA53275F192FA5750009541A /* Models */,
+				EA532765192FA8070009541A /* Controllers */,
 				EA532738192F9B890009541A /* KCAppDelegate.h */,
+				EA532760192FA63C0009541A /* Storyboard.storyboard */,
 				EA532739192F9B890009541A /* KCAppDelegate.m */,
 				EA53273E192F9B890009541A /* Images.xcassets */,
 				EA53273B192F9B890009541A /* Thousand_Words.xcdatamodeld */,
@@ -151,6 +162,24 @@
 				EA53274F192F9B890009541A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA53275F192FA5750009541A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA53275C192FA56A0009541A /* Album.h */,
+				EA53275D192FA56A0009541A /* Album.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EA532765192FA8070009541A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EA532762192FA8010009541A /* KCAlbumTableViewController.h */,
+				EA532763192FA8010009541A /* KCAlbumTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +260,7 @@
 			files = (
 				EA532734192F9B890009541A /* InfoPlist.strings in Resources */,
 				EA53273F192F9B890009541A /* Images.xcassets in Resources */,
+				EA532761192FA63C0009541A /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +282,8 @@
 				EA53273A192F9B890009541A /* KCAppDelegate.m in Sources */,
 				EA532736192F9B890009541A /* main.m in Sources */,
 				EA53273D192F9B890009541A /* Thousand_Words.xcdatamodeld in Sources */,
+				EA53275E192FA56A0009541A /* Album.m in Sources */,
+				EA532764192FA8010009541A /* KCAlbumTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
