@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCAlbumTableViewController : UITableViewController
+@interface KCAlbumTableViewController : UITableViewController <UIAlertViewDelegate>
 @property (nonatomic, strong) NSMutableArray * albums;
+- (IBAction)addAlbumButtonBarButtonPressed:(id)sender;
 @end

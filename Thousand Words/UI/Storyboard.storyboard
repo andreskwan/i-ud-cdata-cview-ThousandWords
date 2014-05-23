@@ -28,7 +28,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="96z-Qv-mYy">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LSp-ft-OTW"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LSp-ft-OTW">
+                            <connections>
+                                <action selector="addAlbumButtonBarButtonPressed:" destination="4nY-bU-zQU" id="bGy-Dx-aD3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Tu-NT-at9" userLabel="First Responder" sceneMemberID="firstResponder"/>
